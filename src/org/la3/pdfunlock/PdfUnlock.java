@@ -112,8 +112,7 @@ public class PdfUnlock {
         if (c < args.length) {
             unlockedFile = args[c++];
         } else {
-            unlockedFile = lockedFile.substring(0, lockedFile.lastIndexOf('.'))
-                    + "_unlocked"
+            unlockedFile = "unlocked_"+ lockedFile.substring(0, lockedFile.lastIndexOf('.'))
                     + lockedFile.substring(lockedFile.lastIndexOf('.'));
         }
     }
